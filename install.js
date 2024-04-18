@@ -8,7 +8,7 @@ function install(kernel)
 	}
 	if ([ 'linux', 'win32' ].includes(platform) && gpu === 'nvidia')
 	{
-		return 'python install.py --onnxruntime cuda-12.2';
+		return 'python install.py --onnxruntime cuda-11.8';
 	}
 	if (gpu === 'amd')
 	{
